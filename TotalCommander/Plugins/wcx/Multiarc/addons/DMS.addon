@@ -1,0 +1,32 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for Amiga DMS archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your xdms.exe.
+; -----------------------------------------------------------------------
+; Version: xDMS 1.21 (16.01.2001) - adapted for WC MultiArc plug-in
+;          Written by     Andre R. de la Rocha  <adlroc@usa.net>
+; Available at: http://atrey.karlin.mff.cuni.cz/~vlada/multiarc/
+; Comments: none
+; Warnings: none
+; Copyright: Vladimir Pilny (Vladimir.Pilny@email.cz)
+; -----------------------------------------------------------------------
+; 
+[DMS]
+ID=44 4d 53 21
+IDPos=0
+Debug=0
+Extension=dms
+Archiver=xdms.exe
+Start="^ -------- Archive --------"
+End="^ Disk type of archive :"
+Description=xDMS 1.21 (16.01.2001)
+Format0="        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1=" "
+Format2="                     TTT dd hh mm ss yyyy"
+Format3=" "
+Format4=" "
+Format5=" "
+Format6="                      zzzzzzzzzzzz"
+List=%P v %AQ
+Extract=%P u %AQ +%FQ
+Test=%P t %AQ

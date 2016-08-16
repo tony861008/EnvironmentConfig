@@ -1,0 +1,30 @@
+[About]
+Version=1.4.3
+Author=Alex
+Homepage=
+Email=
+
+[Lang]
+1=MSIE Cache Browser
+2=(刷新缓存)
+3=是否打开\n%s ?
+4=正在读取缓存内容
+5=正在读取: %d / %d
+6=确定
+7=取消
+8=已经复制URL到剪贴板
+
+30=MSIE Cache Browser for Total Commander
+31=插件版本: %s
+32=MSIE 版本: %s
+33=缓存文件夹: %s
+34=语言:
+35=显示Cookies
+36=打开URL时切换MSIE至脱机状态
+37=插件启动时切换MSIE至脱机状态
+38=打开URL时确认
+39=跳过二级域名:
+40=去除'?'后的参数
+41=退出时切换MSIE至在线状态
+42=显示纯URLs(注意:不适用于长URLs)
+43=去除[数量](注意:不适用于复制URLs)

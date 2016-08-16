@@ -1,0 +1,32 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for DiskDupe DDI files
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your extract.exe.
+; -----------------------------------------------------------------------
+; Version: Extract 2.10
+; Available at: http://ourworld.compuserve.com/homepages/gvollant/extract.htm
+; 
+; (C) 2003 Andrei Zharnasek  (b-2admirer(at)ring.by (at=@) 
+;
+; Comment form author: corrected the addon for Extract 2.10 which was a large 
+; collection of errors.
+; -----------------------------------------------------------------------
+;
+[EXTRACT Diskette Image]
+ID=4D 53, EB, 50 4B
+IDPos=0
+Extension=ddi,ima,imz,img,bin,vfd,dsk
+Archiver=EXTRACT\EXTRACT.EXE
+BatchUnpack=1
+List=%P -l %AAQ %O
+Debug=0
+Description=Extract 2.10
+SearchForUglyDirs=1
+Start="^image file :"
+End=" bytes in "
+Format0="nnnnnnnnnnnnnnnnnnnnnnn   zzzzzzz  dd tt yy*  hh mmH"
+ExtractWithPath=%P -x %AAQ %FWAQ
+Add=%P -i %AAQ %FAQ %S
+AskMode=2
+SkipLIST=1
+AskHistory0=-F144

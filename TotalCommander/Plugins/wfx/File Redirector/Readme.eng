@@ -1,0 +1,28 @@
+File Redirector 5.4
+
+FS-plugin, which will help  you  organize  files
+xfrom different disks.
+
+Description:
+1)  Made all file system operations (copy,delete,reneme,create directory,
+delete directory).
+2)  Compressing of base (3 degrees)
+3)  You can record file in base(full or just start of it).
+4)  You can add comment to all files from one disk.
+7)  Fast loading of base, by command "n<ConfigName>".
+6)  You can exec files from plugin ("ENTER").
+7)  Automatic chech of new/deleted files.
+8)  Record files in base whith defined extanation.
+9)  Saving part of base in other base.
+10) Assign types for file.
+11) Automatic assign type for new files.
+12) Displaying files of given type
+13) Multilingual.
+13) Multilingual. (Belarussian, Russian, English, French, German, Polski,
+    Spanish).
+14) For acceseble files displaying icons.
+15) You can assign several paths to file.
+16) Export to M3U.
+
+
+Made by DandLs (destman).

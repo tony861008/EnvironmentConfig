@@ -1,0 +1,31 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for ARC archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your arc.exe.
+; -----------------------------------------------------------------------
+; Version: ARC Archiver Version 6.02
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/arc602.exe
+; Comments: none
+; WARNING!: 1) Because of original listing format, the layout of directories
+;              in archive cannot be properly reported to WC. That's why
+;              you can encounter some problems with working this kind of
+;              archives. Be careful, please ...
+; Copyright: J.Polygiannakis
+; -----------------------------------------------------------------------
+; 
+[ARC]
+;ID=
+;IDPos=
+Debug=0
+Extension=arc
+Archiver=c:\program files\wincmd\plugins\arc\arc.exe
+Start="^======="
+End="^             ====  ========"
+Description=ARC Archiver Version 6.02
+Format0="nnnnnnnnnnnnnnnnn  zzzzzzzz     a            pppppppp  dd TTT yyhh mmH      "
+List=%p vzw %aQ
+Extract=%p xw %aQ @%lQ
+Test=%p tw %aQ
+Delete=%p dw %aQ @%lQ
+Add=%p azw %aQ @%lQ
+Move=%p mzw %aQ @%lQ

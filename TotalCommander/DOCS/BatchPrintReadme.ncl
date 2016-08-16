@@ -1,0 +1,2 @@
+stdbeep
+infobox "1. 打印队列将被发送至默认打印机并使用其当前设定值.~n~n2. 打印大量文件时避免使用会弹出 [另存为...] 对话框的虚拟打印~n机, 比如: Adobe PDF Printer~n~n不要使用需要密码的网络打印机进行此操作~n~n3. 打印队列发送基于当前选择列表. 若打印结果的序列不同,~nA:~t[打印机属性] => [高级] =>选择 [直接打印到打印机], 或 ~nB:~t打印机设为脱机后发送任务,队列完成后改回联机并打印~n* 本地打印机可使用 [A] 和 [B], 网络打印机使用 [B].~n~n4. 支持的文件类型:~n~tExcel 文件:~txls, xlsx, xlsm~n~tFoxit/Adobe:~tpdf~n~tPowerpoint:~tppt, pptx, pptm~n~tWord 文档:~tdoc, docx, docm, rtf~n~n5. 合并 PDF:~n如果批量打印 PDF 至 PDFfactory 虚拟打印机并参照上述3A的设~n置, 即可将选定的 PDF 合并打印成一个新的 PDF." "批量打印说明"

@@ -1,0 +1,15 @@
+[chn]
+Uncompressed size=压缩前大小
+Compressed size=压缩后大小
+Ratio %=压缩率 %
+Total files=文件个数
+Comment=注释
+Comment present=具有注释
+Volume attribute=分卷
+Lock attribute=锁定
+Solid attribute=固实
+Authenticity information present=具有验证信息
+Recovery record present=具有恢复记录
+Password present=需要密码
+Version to extract=解压版本
+HostOS=主机系统

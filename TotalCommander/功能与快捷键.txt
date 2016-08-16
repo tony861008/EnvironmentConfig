@@ -1,0 +1,73 @@
+= 功能与快捷键说明 =
+
+== 文件操作 ==
+F2		改文件名
+F3		查看文件
+F4		编辑文本文件
+
+F5		拷贝
+Shift+F5	FastCopy拷贝
+F6		移动
+Shift+F6	FastCopy移动
+
+F7		新建目录
+Ctrl+N		新建文本文件
+Del		删除文件
+
+Shift+F1	比较同名文件
+Alt+Shift+F1	比较选中文件
+Shift+F11	找到不同的文件
+Shift+F12	同步两个目录
+
+Ctrl+PageDown	进入压缩或包文件
+Ctrl+M		批量重命名
+Alt+C		改变文件属性
+
+== 文件列表显示 ==
+Ctrl+F1		查看文件列表
+Ctrl+F2		查看文件详细信息
+Alt+4		查看文件缩略图
+
+Ctrl+F3		按文件名排序
+Ctrl+F4		按扩展名排序
+Ctrl+F5		按时间排序
+Ctrl+F6		按大小排序
+
+Ctrl+F10	显示所有文件类型
+Ctrl+F11	显示可执行文件
+Ctrl+F12	显示指定的文件类型
+
+Ctrl+T		新建tab
+Ctrl+W		关闭tab
+Ctrl+Shift+W	关闭所有tab
+
+Ctrl+Left/Right	把左/右面板切换成当前选择的目录
+Alt+F1		切换左面板盘符
+Alt+F2		切换右面板盘符
+Alt+J		左右面板同时切换目录
+Alt+W		查看桌面
+
+SPACE		选中文件
+Ctrl+A		选中所有文件
+Ctrl+Shift+A	取消选择所有文件
+
+Ctrl+R		刷新文件列表
+Alt+D		手工输入路径
+Ctrl+D		打开收藏的目录
+Ctrl+B		查看所有子目录中的文件
+
+Alt+1		打开树状列表
+Alt+2		显示隐藏文件
+Alt+3		显示TortoiseGit图标
+
+== 工具 ==
+Ctrl+F		查找文件
+Ctrl+1		拷贝当前目录全路径
+Ctrl+2		拷贝当前文件名
+Ctrl+3		拷贝当前文件全路径
+Ctrl+G		在当前目录打开命令行窗口
+Ctrl+L		统计选中目录的大小
+Alt+Shift+Enter	统计当前所有目录大小
+Ctrl+Q		用柱状图统计目录大小
+Alt+R		打开功能插件列表
+Ctrl+7		打开FTP

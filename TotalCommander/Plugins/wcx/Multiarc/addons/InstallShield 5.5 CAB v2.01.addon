@@ -1,0 +1,23 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for InstallShield 5.5 CAB archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your i5comp.exe.
+; -----------------------------------------------------------------------
+; Version: i5comp v2.01
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/i5comp21.rar
+; -----------------------------------------------------------------------
+; Author: Guntz Philippe
+;
+[InstallShield55]
+Description="InstallShield 5.5"
+ID=49 53 63 28 01
+Extension=HDR,CAB
+BatchUnpack=0
+Archiver=%COMMANDER_PATH%\Plugins\Archiver\i5comp\i5comp.exe
+List=%P l -o -f %AQ
+Debug=0
+Format0="tt-dd-yyyy hh:mm zzzzzzzzz aaaa ppppppppp      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Extract=%P e -o -d -f -v2 %AQ %FQ
+Delete=%P d -o -d -f %AQ %FQ
+Add=%P a -o -f %AQ %RQ %fQ
+

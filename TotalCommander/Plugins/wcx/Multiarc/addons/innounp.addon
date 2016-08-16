@@ -1,0 +1,92 @@
+; -----------------------------------------------------------------------
+; Inno Setup (versions 3.0.0-beta through 5.1.2 and up)
+; MultiArc Addon by Gnozal, arsvrn, MultiArc team
+;
+; Version addon: 0.17
+;
+; Uses: Innounp v0.17
+; Homepage: http://innounp.sourceforge.net/
+;
+; Note about ID in this addon and innounp.
+;
+;   The innounp detect correct Inno instalation by signatures  
+;   'Inno Setup Setup Data (' or 'My Inno Setup Extensions Setup Data ('.
+;   If MA cannot enter in some installation, check it in command line:
+;
+;     innounp.exe -v -m _Path_to_Installation_
+;
+;   and if innounp.exe can show listing of archive, in Total Commander
+;   open file on view (F3), switch to Hex mode, search signature (ctrl+f)
+;   Inno Setup Setup Data ( or My Inno Setup Extensions Setup Data (.
+;   Detect offset in file and via calc convert Hex value to decimal 
+;   (in extended mode enter offset in Hex mode switch to Decimal mode), and
+;   add position signature in file to IDPos in decimal.
+;
+; Usage with IETotal.
+;   Arrange item in section [PackerPlugins] wincmd.ini as IETotal record follow 
+;   MultiArc record(-s). Example:
+;   ....
+;   7z=223,Plugins\multiarc.wcx 
+;   muliarc=223,Plugins\multiarc.wcx 
+;   ... 
+;   IETotal=324,Plugins\IETotal.wcx 
+;   ...
+;
+; Why used two section in addon?
+;
+;  Exsist two version Inno-installation  version 3.0.1.
+;  First with the signature "Inno Setup Setup Data (3.0.1) with ISX", innpunp cannot 
+;  process this file, second with signature "Inno Setup Setup Data (3.0.1)" innounp can process 
+;  this file.
+;  Section [InnoSetup 3.0.1] filtered this situation, and allow process files with out 
+;  " with ISX". Files with signature "Inno Setup Setup Data (3.0.1) with ISX" processed by  
+;  IETotal. All other files processed with section [InnoSetup 3.x, 4.x, 5.x]
+;
+;  First published and discussion of this addon (on Russian, only important posts): 
+;    http://forum.ru-board.com/topic.cgi?forum=5&topic=15805&start=279&limit=1
+;    http://forum.ru-board.com/topic.cgi?forum=5&topic=15805&start=291&limit=1
+;    http://forum.ru-board.com/topic.cgi?forum=5&topic=15805&start=293&limit=1
+;
+; Changes
+; 2006-04-06 by MultiArc team
+;  * rewited IDPOS for better detection of archive. Improve new capabilites of MA. 
+; 2006-04-06 by MultiArc team
+;  * rewited ID, IDPos for better detection of archive. Solution by arsvrn. 
+; 2004-04-02 by Maxwish
+;  * corrected datestring in 'format0' from "yyyy.mm.dd" to "yyyy.tt.dd"
+; 2004-04-19 by Maxwish
+;  * added '-m' parameters (now will also show embedded files)
+;  * added 'BatchUnpack=1' (improves speed)
+;  * removed { } from {@%LQ} in 'extract' strings (not needed)
+; -----------------------------------------------------------------------
+
+
+[InnoSetup 3.0.1] 
+Description="Inno Setup 3.0.1 without 'with ISX' [ARS]" 
+Archiver=%COMMANDER_PATH%\Plugins\Archiver\innounp\innounp.exe 
+Extension=exe 
+ID=49 6E 6E 6F 20 53 65 74 75 70 20 53 65 74 75 70 20 44 61 74 61 20 28 33 2E 30 2E 31 29 00 
+IDPos=53572, <SeekID> 
+IgnoreErrors=0 
+Start="^--------------------------------------" 
+End="^--------------------------------------" 
+Format0="zzzzzzzzzz  yyyy.tt.dd hh:mm  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn" 
+List=%P -v -m %AQA 
+Extract=%P -e -m %AQA @%LQ 
+ExtractWithPath=%P -x -m %AQA @%LQ 
+SkipSfxHeader=0
+
+[InnoSetup 3.x, 4.x, 5.x] 
+Description="Inno Setup 3.x, 4.x, 5.x [ARS]" 
+Archiver=%COMMANDER_PATH%\Plugins\Archiver\innounp\innounp.exe 
+Extension=exe 
+ID=49 6E 6E 6F 20 53 65 74 75 70 20 53 65 74 75 70 20 44 61 74 61 20 28 33, 49 6E 6E 6F 20 53 65 74 75 70 20 53 65 74 75 70 20 44 61 74 61 20 28 34, 49 6E 6E 6F 20 53 65 74 75 70 20 53 65 74 75 70 20 44 61 74 61 20 28 35 
+IDPos=54084, 55612, 36744, 36740, 36696, 37256, 38280, 37768, <SeekID> 
+IgnoreErrors=0 
+Start="^--------------------------------------" 
+End="^--------------------------------------" 
+Format0="zzzzzzzzzz  yyyy.tt.dd hh:mm  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn" 
+List=%P -v -m %AQA 
+Extract=%P -e -m %AQA @%LQ 
+ExtractWithPath=%P -x -m %AQA @%LQ
+SkipSfxHeader=0

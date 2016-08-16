@@ -1,0 +1,25 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for MPQ archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your mpq2k.exe.
+; -----------------------------------------------------------------------
+; Version: Mo'PaQ 2000 1.00 Copyright (c) 2000 Justin Olbrantz(Quantam)
+; Available at: http://www.campaigncreations.com/starcraft/mpq2k/#Download
+; Comments: I don't know for what this staf is. See URL above for principles
+; WARNING!: This stuff incorrectly work with non-ASCII symbols (cyrillic)
+;           symbols, for example ... ) 
+; -----------------------------------------------------------------------
+;
+[MPQ2K]
+ID=4D 50 51
+IDPos=0
+Debug=0
+Extension=mpq
+Description=Mo'PaQ 2000 1.00
+Start="^The official client of the MPQ API Library"
+End="recognized files"
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn  zzzzzzzzzzzz"
+Archiver=d:\program files\wincmd32\plugins\mpq2k\mpq2k.exe
+List=%P l %AQ
+Extract=%P e %AQ %FQ
+Add=%P a %AQ %FQ

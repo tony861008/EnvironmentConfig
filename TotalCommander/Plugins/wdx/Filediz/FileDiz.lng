@@ -1,0 +1,26 @@
+; Send new or updated translation to: atorg@yandex.ru
+; Don't forget "Description" line in pluginst.inf
+
+[CHN]
+Description=描述
+Description (2)=描述 (2)
+Description (3)=描述 (3)
+Description (4)=描述 (4)
+Description (5)=描述 (5)
+Description (6)=描述 (6)
+Description (7)=描述 (7)
+Description (8)=描述 (8)
+Version info=版本信息
+Company name=公司名称
+File description=文件描述
+File version=文件版本
+
+Internal name=内部名称
+Original filename=原始文件名
+Product name=产品名称
+Product version=产品版本
+Legal copyright=版权
+Legal trademarks=法定商标
+Comments=备注
+Private build=私人构建
+Special build=特别构建

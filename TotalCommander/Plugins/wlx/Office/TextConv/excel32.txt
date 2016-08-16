@@ -1,0 +1,7 @@
+Copy the enclosed file into the same directory:
+
+C:\Program Files\Common Files\Microsoft Shared\TextConv
+
+and merge the registry file with your registry.
+
+This filter may produce a security warning when used.

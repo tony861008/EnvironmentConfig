@@ -1,0 +1,32 @@
+[chn]
+; Field names.
+Size=大小
+Compressed size=压缩后大小
+Compression Ratio=压缩比
+Directory Count=子目录数
+File Count=文件数
+Empty=空目录
+Contains Files=包含文件
+Contains Subdirectories=包含子目录
+Yes=是
+No=否
+
+; Prefixes.
+B|KiB|MiB|GiB|kB|MB|GB=B|KB|MB|GB|KB|MB|GB
+
+; Possible values for the fields "Empty", "Contains Files" and "Contains Subdirectories"
+; A=Access denied, U=Unreadale Unicode filename, E=Unknown error.
+Yes|No|A|U|E=是|否|A|U|E
+
+; Directory, junction- and mount points.
+0=目录
+1=Jnc. Pt.
+2=Mnt. Pt.
+
+; Tokens which are displayed before the calculation result to indicate that the result may be incomplete.
+; A=Access denied, U=Unreadale Unicode filename, E=Unknown error, F=Not followed a reparse point (junction- or mount point).
+40=AD|U|E|NF
+
+// Displayed in the size fields if no files have been found or it the directory is completely empty instead of just displaying 0.
+50=没有文件
+51=空目录

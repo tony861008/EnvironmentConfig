@@ -1,0 +1,28 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for AIN archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your ain.exe.
+; -----------------------------------------------------------------------
+; Version: AIN Archiver Version 2.32 Copyright 1996 Transas Marine (UK) Ltd.
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/ain232.exe
+; Comments: none
+; WARNING!: This is a 16-bit DOS application. It used a short file names
+; so aside from uglification of long file names you can encounter some 
+; additional problems - be careful, please. 
+; -----------------------------------------------------------------------
+; 
+[AIN]
+Extension=ain
+Archiver=c:\program files\wincmd\plugins\ain\ain.exe
+InputString=Y
+List=%P v -y %a
+Start="^    File name               Size    Date      Time"
+End=" files      "
+Debug=0
+Description=AIN Archiver Version 2.32
+Format0="nnnnnnnnnnnnnnnnnnnnnnn zzzzzzzz  dd tt yy  hh mm ss"
+Extract=%P e -y %a @%l
+Test=%P t -y %a @%l
+Delete=%P d -y %a @%l
+Add=%P a -y %a @%l
+Move=%P m -y %a @%l

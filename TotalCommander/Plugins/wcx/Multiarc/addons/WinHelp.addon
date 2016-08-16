@@ -1,0 +1,20 @@
+; HelpDeco addon for MultiArc/WinCommander
+; URL: wcx.sourceforge.net
+; Author: S.Zharski
+;
+; Note: This is an addon for using HelpDeco in decompile mode
+;
+[WinHelp]
+ID=3F 5F
+IDPos=0
+Debug=1
+Extension=hlp,mvb
+BatchUnpack=1
+Description=HelpDeco v.2.1
+Start="^--- packed - - unpacked - - name ------------------------"
+End="^-----------------------------------------------------------"
+Format0="pppppppppppp zzzzzzzzzzzz nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Archiver=e:\projects\wcx\multiarc\addons\helpdeco\debug\helpdeco.exe
+List=%P /v /y %AQA
+Extract=%P /v /y %AQA %F
+ExtractWithPath=%P /v /y %AQA @%L

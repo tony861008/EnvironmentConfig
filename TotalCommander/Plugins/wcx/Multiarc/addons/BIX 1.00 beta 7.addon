@@ -1,0 +1,29 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for BIX archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your bix.exe.
+; -----------------------------------------------------------------------
+; Version: BIX Archiver Version 1.00 Beta 7 Copyright (c) Igor Pavlov  27-Oct-1999
+; Available at: http://compress.da.ru/
+;		http://www.7-zip.com
+; Comments: none
+; WARNING!: none
+; -----------------------------------------------------------------------
+;
+[BIX]
+ID=42 49 58 30 C1 B8 03 9A F1
+Extension=bix
+SkipDirsInFileList=1
+Start="^----------"
+End="^----------"
+Debug=0
+Description=BIX Archiver Version 1.00 Beta 7
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1="yyyy tt dd hh mm ss  aaaaa zzzzzzzzzz pppppppppp"
+Archiver = c:\program files\wincmd\plugins\bix\bix.exe
+List=%P ltf %AQA
+Extract=%P -r0 -y e %AQA @%LQ
+Delete=%P d -r0 -y %AQA @%LQ
+Add=%P -r0 -y a %AQA @%LQ
+Test=%P t %AQA
+Move=

@@ -1,0 +1,38 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for InstallShield Z archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your icomp.exe.
+; -----------------------------------------------------------------------
+; Version: Version 3.00.062
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/icomp95.zip
+; Comments: Read-Only version. 
+; (C) 2003 Andrei Zharnasek (b-2admirer(at)ring.by (at)=@
+; WARNING!: This utility is not Y2K compatible. Date of packed files in list for
+;           year 2000 looks like 100. It's not fatal, but be ware ...
+;           NOTE: Thanks to Eugen Labun we have some workaround for Y2K problem
+;           Format0= was changed and now only year will be displayed bogus - other
+;           parameters is OK.
+; (Co)Authors: Eugen Labun
+;              Andrei Zharnasek
+; -----------------------------------------------------------------------
+;
+
+[InstallShield]
+ID=13 5d 65 8c
+IDPos=0
+Extension=z,1,2,3,4,5,6,7,8,9,lib,ins
+List=%PQ %AAQ -l %E5 %O
+Test=%PQ %AAQ -dt
+Description=InstallShield File Compressor v.3.00.062
+Archiver=%COMMANDER_PATH%\Plugins\Archiver\icomp\ICOMP.EXE
+IgnoreErrors=0
+
+Start="^ ========"
+End="^                ------"
+Debug=0
+Format0=" tt-dd-yy* hh-mm zzzzzzzz aaaa pppppppp nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Extract=%PQ %AAQ %FWAQ %FPAQ -d -h -o %E1
+Add=%PQ %FAQ %AAQ %FPAQ -h
+Delete=%PQ %FAQ %AAQ -r -h %E2=======
+Format0=" tt-dd-yy* hh-mm zzzzzzzz aaaa pppppppp nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+List=%PQ %AQ -l %E5 %O

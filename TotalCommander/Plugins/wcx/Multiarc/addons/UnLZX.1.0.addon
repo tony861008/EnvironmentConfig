@@ -1,0 +1,25 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for LZX archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your UnLZX.exe.
+; -----------------------------------------------------------------------
+; Version: MultiArc - optimized by Siarzhuk Zharski
+;          Based on unlzx by David Tritscher && Oliver Gantert
+; Available at: http://www.zharik.f2s.com
+; Comments: read-only version ...
+; Warnings: none
+; -----------------------------------------------------------------------
+;
+[LZX]
+ID= 4C 5A 58
+IDPos=0
+Debug=0
+Extension=lzx
+UnixPath=1
+Description=UnLZX 1.0
+Archiver=d:\program files\wincmd\plugins\LZX\UnLZX.exe
+Start="^BEGIN -- -------- "
+End="^END ---- -------- "
+Format0="zzzzzzzz          hh mm ss dd ttt yyyy          nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+List=%P -v %A
+Extract=%P -x %AQ -p %FQ

@@ -1,0 +1,30 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for BSA archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your bsa.exe.
+; -----------------------------------------------------------------------
+; Version: BSA 2.00 (Rel 0.972)
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/bsa.zip 
+; Comments: none
+; WARNING!: none
+; -----------------------------------------------------------------------
+; 
+[BSA]
+ID=FF 42 53 47
+IDPos=0
+Extension=bsn
+Debug=0
+UnixPath=1
+IgnoreErrors=1
+Description=BSA 2.00 (Rel 0.972)
+Start="^- ---------- -------- -------- ------ -------- -------- ----- -------"
+End="^- ---------- -------- -------- ------ -------- -------- ----- -------"
+Format0="             zzzzzzzz pppppppp                 dd tt yy hh:mm "
+Format1="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Archiver=c:\program files\wincmd\plugins\bsa\bsa.exe
+List=%P -v %a
+Extract=%P -e -y %a @%l
+Delete=%P -d -y %a @%l
+Test=%P -t -y %a
+Add=%P -a -y -p -r %a @%l
+Move=%P -a -y -p -r -m %a @%l

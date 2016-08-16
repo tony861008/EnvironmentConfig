@@ -1,0 +1,38 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for UFA archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your ufa.exe.
+; -----------------------------------------------------------------------
+; Version: UFA Archiver 0.04 Beta 1 
+; Available at: http://compress.da.ru
+;               http://compression.hypermart.net
+;		http://www.7-zip.com
+;               ftp://ftp.elf.stuba.sk/pub/pc/pack/ufa*.zip
+;               ftp://ftp.simtel.net/pub/simtelnet/win95/compress/ufa*.zip
+; Comments: none
+; WARNING!: 1) If files with same names will occure in different 
+;           directories of UFA archive, only first from it will be extracted by 
+;           multiarc. The cause - impossibility use relative pathes in UFA.EXE
+;           command line. Be careful,please ...
+;           2) Adding is not supported - because UFA.exe have original
+;           command-line syntax
+; -----------------------------------------------------------------------
+; 
+[UFA]
+ID=55 46 41
+IDPos=0
+Debug=0
+Extension=ufa
+Description=UFA Archiver 0.04 Beta 1
+Start="^------------ ---------- ---------- ----- ---------------- "
+End="^------------ ---------- ---------- -----"
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1="            zzzzzzzzzzz pppppppppp       yyyy-tt-dd hh:mm aaaaa"
+Format2=" "
+Archiver=c:\program files\wincmd\plugins\Ufa\ufa.exe
+List=%P v %AQA
+Extract=%P e -y %AQA %FWQ
+Test=%P t -y %AQA
+Delete=%P d -y %AQA %FWQ
+Add=%P a -y -m9 %AQA %FQ
+Move=

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 3 from Scooter Software -->
+<BCState>
+	<TBcState>
+		<FirstStartup Value="False"/>
+		<FormPosStr Value="100;100;1202;865"/>
+	</TBcState>
+	<TCheckForUpdatesState>
+		<Build Value="15075"/>
+		<LastChecked Value="2012-08-09 10:19:04"/>
+	</TCheckForUpdatesState>
+	<TFileFormatManagerState>
+		<FormPosStr Value="230;181;1072;783"/>
+	</TFileFormatManagerState>
+	<THomeState>
+		<SessionType Value="TTextCompareSession"/>
+	</THomeState>
+	<TTextCompareState>
+		<LeftMRUSpecs>
+			<_0 Value="D:\LingJing\Product\client\Scripts\ScriptName.ini"/>
+		</LeftMRUSpecs>
+		<MRUFonts>
+			<_0 Value="Consolas;10"/>
+		</MRUFonts>
+	</TTextCompareState>
+</BCState>

@@ -1,0 +1,15 @@
+[DDI Image 4.0]
+ID=EB
+IDPos=9216
+Extension=ddi
+Archiver=EXTRACT\EXTRACT.EXE
+BatchUnpack=1
+List=%P -l %AAQ %O
+Debug=0
+Description=DiskDupe / Micro System Design, Inc [4.0]
+SearchForUglyDirs=1
+Start="^image file :"
+End=" bytes in "
+Format0="nnnnnnnnnnnnnnnnnnnnnnn   zzzzzzz  dd tt yy*  hh mmH"
+ExtractWithPath=%P -x %AAQ %FWAQ
+Add=%P -i %AAQ %FAQ %S

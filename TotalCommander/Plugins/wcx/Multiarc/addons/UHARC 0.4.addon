@@ -1,0 +1,27 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for UHARC archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your uharc.exe.
+; -----------------------------------------------------------------------
+; Version: UHARC 0.4 (Win32 version)
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/uharc04.zip
+; WARNING!: Problems when working with LFN and directories
+; Copyright: Kirill Voloshin (arctest.cjb.net)
+; -----------------------------------------------------------------------
+;
+[Uharc]
+ID=55 48 41
+IDPos=0
+Extension=UHA
+Archiver=uharc.exe
+Debug=0
+Description=UHARC 0.4
+Start="^-------------------------------------------------------------------------------"
+End="^-------------------------------------------------------------------------------"
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn  zzzzzzz  dd-TTT-yyyy  hh:mm  aaaa"
+List=%P l %a
+Extract=%P x -y -d1 %a @%LQ
+Test=%P t %a
+Add=%P a -d1 -mz %AQ @%LQ
+;Delete=
+Move=%P m -d1 -mz %AQ @%LQ

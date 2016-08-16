@@ -1,0 +1,32 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for ARHANGEL archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your arhangel.exe.
+; -----------------------------------------------------------------------
+; Version: ARchive HANdler by GEorge Lyapko v1.40  Shareware (c) 1997-2000
+; Available at: ftp://ftp.cdrom.com/pub/sac/pack/arh140.zip
+; Comments: none
+; WARNING!: DOES NOT STORE DIRECTORIES AND FILE PATHS.
+;	    FILES STORED FROM DIRECTORIES AND/OR IF THEIR FILENAME MORE THAN 8 CHARACTERS
+; 	    ARE SHOWN WITH TRUNCATED NAME IN FILE LIST AND CANNOT BE EXTRACTED FROM THE .LG ARCHIVE!
+;           (List= should be List=%P l -d -q %AQ but then Start= and End= dont work)
+; Copyright: J.Polygiannakis
+; -----------------------------------------------------------------------
+; 
+[LG]
+;ID=4c 47
+;IDPos=0
+Debug=0
+Extension=lg
+Archiver=arhangel.exe
+Description=ARchive HANdler by GEorge Lyapko v1.40
+Start="^============ ========== ========== ====== ========== ======== ======= === ====="
+End="^============ ========== ========== ====== ========== ======== ======= === ====="
+Format0="nnnnnnnnnnnn zzzzzzzzzz                   yyyy tt dd hh mm ss aaaaa            "
+List=%P l -q %AQ
+Extract=%P e %AQ @%LQ
+Test=%P t -q %AQ
+Delete=%P d -q %AQ @%LQ
+Add=%P a -q %AQ @%LQ
+Move=%P a -m -q %AQ @%LQ
+

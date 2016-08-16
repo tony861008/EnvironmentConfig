@@ -1,0 +1,31 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for SQZ archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your sqz.exe.
+; -----------------------------------------------------------------------
+; Version: SQZ - Squeeze It(1.08.3/1.08.4alfa), Jan 24/May 19 1993, 
+;                Copyright J I Hammarberg
+; Available at: ftp://ftp.vse.cz/pub/msdos/SAC/pc/pack/sqz1083e.exe
+;               ftp://ftp.vse.cz/pub/msdos/SAC/pc/pack/sqz1084.exe
+; Comments: none
+; Warnings: All long file names LFN will be stored only in old 8.3 convention.
+; Copyright: Vladimir Pilny (Vladimir.Pilny@email.cz)
+; -----------------------------------------------------------------------
+; 
+[SQZ]
+ID=48 4c 53 51 5a 31
+IDPos=0
+Debug=0
+Extension=sqz
+Archiver=sqz.exe
+Description=SQZ - Squeeze It(1.08.3/1.08.4alfa)
+Start="----------"
+End="^=============="
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1="zzzzzzzzzzzzzzzzzzzzzzzzz pppppppppp       dd tt yyyy hh mm ss   aaaa         "
+List=%P v %aA
+Extract=%P e %aA @%l
+Test=%P t %aA @%l
+Delete=%P d %aA @%l
+Add=%P a %aA @%l
+;Move=

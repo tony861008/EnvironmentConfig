@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 3 from Scooter Software -->
+<BCCommands>
+	<TTextCompareCommands>
+		<Items>
+			<CopyItemLeftAction Value="Ctrl+Alt+Left"/>
+			<CopyItemRightAction Value="Ctrl+Alt+Right"/>
+			<CopyLeftAction Value="Alt+Left"/>
+			<CopyRightAction Value="Alt+Right"/>
+			<DiffNextAction Value="Ctrl+Alt+Down"/>
+			<DiffPrevAction Value="Ctrl+Alt+Up"/>
+			<DiffSectionNextAction Value="Alt+Down"/>
+			<DiffSectionPrevAction Value="Alt+Up"/>
+			<ExistsNextAction Value="None"/>
+			<ExistsPrevAction Value="None"/>
+			<FavCompareAllAction Value="Alt+A"/>
+			<FavDiffAction Value="Alt+D"/>
+			<GoLeftAction Value="Ctrl+Left"/>
+			<GoRightAction Value="Ctrl+Right"/>
+			<ZoomLeftAction Value="None"/>
+			<ZoomRightAction Value="None"/>
+		</Items>
+		<Toolbars>
+			<SessionsBar Value="TopDock;;;0"/>
+			<DisplayFiltersBar Value="TopDock;;;1"/>
+			<EditBar Value="TopDock;;;2"/>
+			<SearchBar Value="TopDock;;;3"/>
+			<ViewBar Value="TopDock;;;4"/>
+		</Toolbars>
+	</TTextCompareCommands>
+</BCCommands>

@@ -1,0 +1,30 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for RK archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your rk.exe.
+; -----------------------------------------------------------------------
+; Version: RK high performance archiver v1.04 build 1 (English version)
+; Available at: http://members.tripod.com/~malcolmt/
+;               http://rksoft.virtualave.net/
+; P.S. Download with browser only
+; Copyright: Andrei Zharnasek (c) 2003
+; Comments: I've found out that RK does not include hidden files by default.
+; -----------------------------------------------------------------------
+;
+[RK]
+Extension=rk
+ID=01 52 4B
+IDPos=-3
+Debug=0
+Description=RK High Performance Archiver v1.04.1 alpha
+Start="     ====    ====     ====   ===="
+End="  -------                    -------"
+Format0="zzzzzzzzz  dd tt yy  hh mmH  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Archiver=rk\rk.exe
+List=%P -va %AAQ
+Extract=%P -e %AAQ @%LA
+Test=%P -i %AQ
+;Delete=
+Add=%P -a -mx -mwx -Ah+ {%S} %AAQ @%LA
+AskMode=0
+SkipLIST=1

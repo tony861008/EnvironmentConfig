@@ -1,0 +1,11 @@
+; WC MultiArc addon for icon libraries (ICL)
+; URL: http://plugring.farmanager.com/downld/files/arc/icl_bif2.zip
+; Author: adaptation from FAR by MaxWish
+
+[ICL]
+Archiver=icl.exe
+Extension=icl
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1="zzzzzzzzzz aaaaa"
+List=%p v %AQ
+Extract=%p e %AQ @%LA

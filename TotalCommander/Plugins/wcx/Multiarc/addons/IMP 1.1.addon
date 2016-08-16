@@ -1,0 +1,34 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for IMP archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your imp.exe.
+; -----------------------------------------------------------------------
+; Version: IMP 1.1  High-Performance Archiver.  Copyright 1998-1999 Technelysium Pty Ltd.
+; Available at: www.technelysium.com.au
+; Comments: none
+; WARNING!: User License Agreement for this version of IMP says:
+;           "  The user shall not use IMP for creation of archives via 
+;             a graphical user interface without payment of the 
+;             registration fee required for use of WinImp." 
+;           Yes-yes, you have to register before using this archiver in multiarc. 
+; -----------------------------------------------------------------------
+;
+[IMP]
+ID=49 4D 50 0A
+IDPos=0
+Debug=0
+BatchUnpack=0
+Archiver=c:\program files\wincmd\plugins\Imp\imp.exe
+Extension=imp
+SkipDirsInFileList=1
+List=%P l -y %AQA
+Start="^---------"
+End="^Total: "
+Description=IMP 1.1
+Format0="zzzzzzzzzz TTT dd yyyy hh:mmHH aaaaa nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Extract=%P e -y -p- %AQA @%LA
+ExtractWithPath=%P e -y %AQA @%LA
+Test=%P t -y %AQA
+Delete=%P d -y %AQA @%LA
+Add=%P a -y -pl %AQA @%LA
+Move=%P a -d -y -pl %AQA @%LA

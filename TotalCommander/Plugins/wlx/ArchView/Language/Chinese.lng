@@ -1,0 +1,236 @@
+[Tabs]
+Info=信息
+Comment=注释
+About=关于
+
+[Info]
+UnpackSizeFiles=压缩前文件大小
+PackSizeFiles=压缩后文件大小
+ArchiveSize=压缩包大小
+NumberFiles=文件个数
+NumberFolders=文件夹个数
+NumberChapters=章节个数
+DictionarySize=字典大小
+HostOS=主机系统
+ExtractOS=解压系统
+MethodPack=压缩模式
+MemorySize=内存大小
+RatioArchiveSize=压缩包比率
+RatioPackFileSize=压缩文件比率
+PackVersion=压缩版本
+UnpackVersion=解压版本
+SfxModule=自解压模块
+RecoveryRecord=恢复记录
+Solid=固实压缩
+MultiArc=分卷
+NumberVolume=卷数
+MainComment=主要注释
+FileComment=文件注释
+ChapterComment=章节注释
+Password=需要密码
+ArchiveLock=压缩包锁定
+AuthVerification=用户身份校验
+TestTime=测试时间
+AnalyzeTime=分析时间
+AllTime=总计时间
+DateCreated=创建日期
+DateModified=修改日期
+TimeCreated=创建时间
+TimeModified=修改时间
+OriginalName=原始时间
+Magic=魔法
+
+[About]
+Version=版本
+TypeProgram=Lister 插件，用于
+AndLater=及更新版本
+UseProgram=非商业使用免费
+FunctionProgram=显示压缩包信息
+SupportWCXPlugins=支持 wcx 插件
+SpecialThanksTo=特别感谢
+AdviceAndHelp=建议和帮助
+AuthorProgram=程序作者
+AuthorSite=作者网站
+ForTranslation=翻译
+Contact=联系
+SendComment=给作者发送注释和希望
+AllRightsReserved=保留所有权利
+EMail=电子邮件
+HomePage=主页
+Translation=翻译
+TranslationMan=张学思
+TranslationMail=1456ok＠163.com
+TranslationSite=没有主页
+
+[OS]
+AcornRISC=Acorn RISC
+Amiga=Amiga
+AppleGS=Apple GS
+AtariST=Atari ST
+BeOS=BeOS
+CPM=CP/M
+DOS=MS-DOS
+MacOS=Mac OS
+MVS=MVS
+Next=Next
+OS2=OS/2
+Primos=Primos
+SMSQDOS=SMS/QDOS
+Tandem=Tandem
+TOPS20=TOPS-20
+Unix=Unix
+VaxVMS=Vax VMS
+VFAT=VFAT
+VMCMS=VM/CMS
+Win32=Win 32
+Win95=Win 95
+WinNT=Win NT
+ZSystem=Z-System
+
+[Pack]
+;all
+Stored=储存
+Superfast=超快
+Fastest=最快
+Fast=快速
+Normal=正常
+Good=较好
+Verygood=很好
+Best=最佳
+;zip, gz
+Deflated=Deflated
+Deflated64=Deflated64
+Imploded=Imploded
+Imploding=Imploding
+Shrunk=Shrunk
+Reduced=Reduced
+Tokenizing=Tokenizing
+BZip2=BZip2
+;bh
+Fuse=Fuse
+;bz2, ppm
+Rate=Rate
+;arc, pak, dwc, zoo
+Crunched=Crunched
+Unpacked=Unpacked
+Packed=Packed
+Squeezed=Squeezed
+Squashed=Squashed
+Crushed=Crushed
+Distilled=Distilled
+;cab
+MSZIP=MSZIP
+LZX=LZX
+Quantum=Quantum
+;ha
+CPY=CPY
+ASC=ASC
+HSC=HSC
+;lha, lzh
+lh0=-lh0-
+lh1=-lh1-
+lh2=-lh2-
+lh3=-lh3-
+lh4=-lh4-
+lh5=-lh5-
+lh6=-lh6-
+lh7=-lh7-
+lzs=-lzs-
+lz4=-lz4-
+lz5=-lz5-
+
+[Other]
+Yes=是
+No=否
+Byte=字节
+KByte=KB
+MByte=MB
+GByte=GB
+TByte=TB
+Second=秒
+Percent=%
+Number=#
+Unknown=N/A
+PleaseWait=请稍侯...
+Archive=压缩包
+Plugin=插件
+
+;for logfile
+[Archives]
+Ace=ACE
+ArcPak=ARC/PAK
+Arc=ARC
+Pak=PAK
+Arj=ARJ
+Bh=BH
+BZip2Tbz2=BZIP2/TBZIP2
+BZip2=BZIP2
+Cab=CAB
+Cpio=CPIO
+Dwc=DWC
+GZipTgz=GZIP/TGZIP
+GZip=GZIP
+Ha=HA
+LhaLzh=LHA/LZH
+Lha=LHA
+Lzh=LZH
+Ppm=PPM
+Rar=RAR
+Sqz=SQZ
+Tar=TAR
+Z=Z
+ZipJar=ZIP/JAR
+Zip=ZIP
+Jar=JAR
+Zoo=ZOO
+Sfx=SFX
+
+[Messages]
+_TestArchive=_TEST ARCHIVE_
+_AnalyzeArchive=_ANALYZE ARCHIVE_
+BlockArchiveComment=block archive comment
+BlockArchiveEnd=block archive end
+BlockArhiveHeader=block arhive header
+BlockAuthentityVerification=block authentity verification
+BlockChapter=block chapter
+BlockControlItems=block control items
+BlockFile=block file
+BlockFolder=block folder
+BlockFolderBegin=block folder begin
+BlockFolderEnd=block folder end
+BlockInformationalItems=block informational items
+BlockJar64DirectoryRecord=block jar64 directory record
+BlockLocalFile=block local file
+BlockLocalFolder=block local folder
+BlockLongNameFile=block long name file
+BlockPassword=block password
+BlockPostfix=block postfix
+BlockRecoveryRecord=block recovery record
+BlockSecurityEnvelope=block security envelope
+BlockUnknown=block unknown
+BlockVolumeLabel=block volume label
+BlockZip64DirectoryLocator=block zip64 directory locator
+BlockZip64DirectoryRecord=block zip64 directory record
+DLLReadArchiveComment=DLL read archive comment
+MarkerArchive=压缩包制作者
+SFXModule=自解压模块
+SignatureArchive=压缩包签名
+SubBlockArchiveComment=压缩包注释子块
+SubBlockAuthentityVerification=subblock authentity verification
+SubBlockFileComment=subblock file comment
+SubBlockRecoveryRecord=subblock recovery record
+SubBlockUnknown=未知的子块
+UsePlugin=使用插件
+
+[Results]
+TerminateThread=线程终止
+MessageOK=确定
+ErrorOpenFile=出错于打开文件
+ErrorReadFile=出错于读取文件
+ErrorSeekFile=出错于搜索文件
+SuddenEndFile=文件突然结束
+ErrorFormat=错误的格式
+ErrorNotDll=错误，不是 DLL
+ErrorDll=错误的 DLL
+ErrorCreateWindow=出错于创建窗口
+ErrorUnknown=未知错误

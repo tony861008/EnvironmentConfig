@@ -1,0 +1,29 @@
+[chn]
+GetCrc32From=获取CRC32,从
+	Tag_Crc32=标签_CRC32
+	Tag_YesNo=标签_是/否
+	Sfv_Crc32=SFV_CRC32
+	Sfv_YesNo=SFV_是/否
+	Auto_Crc32=自动_CRC32
+	Auto_Result=自动_结果
+
+GetCrc32FromFile=获取CRC32,从文件
+	NoBrackets=无方括号
+	WithBrackets=带方括号
+	Force_NoBrackets=强制_无方括号
+	Force_WithBrackets=强制_带方括号
+	OnlyOnDemand=仅需要时
+	OnDemand_IfTagName=需要_带标签
+	OnDemand_IfBiggerThanSize1=需要_大于Size1
+	OnlyIfLesserThanSize2=仅小于Size2
+	WithoutMETADATA=无METADATA
+	OnDemand_WithoutMETADATA=需要_无METADATA
+
+CheckCrcFrom=检查CRC,从
+	Tag=标签
+	Tag_OnlyOnDemand=标签_仅需要时
+	Sfv=SFV
+	Sfv_OnlyOnDemand=SFV_仅需要时
+	Auto=自动
+	Auto_OnlyOnDemand=自动_仅需要时
+	Auto_OnDemand_IfBiggerThanSize3=自动_需要_大于Size3

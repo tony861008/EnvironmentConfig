@@ -1,0 +1,100 @@
+[CHN]
+; field names -- ×Ö¶ÎÃû³Æ
+iform=Êµ¼Ê¸ñÊ½
+badext=¸ñÊ½´íÎó
+order=×Ö½ÚË³Ğò
+images=Ö¡
+layers=²ã
+pixw=¿í¶È(ÏñËØ)
+pixh=¸ß¶È(ÏñËØ)
+orient=·½Ïò
+aspect=×İºá±È
+pixd=¶Ô½ÇÏß(ÏñËØ)
+pixels=ÏñËØÊı
+spp=Ã¿ÏñËØÑù±¾Êı
+bps=Ã¿Ñù±¾Î»Êı
+depth=Î»Éî¶È
+mode=Ä£Ê½
+compr=Ñ¹Ëõ·½Ê½
+xres=x-·Ö±æÂÊ
+yres=y-·Ö±æÂÊ
+docw=ÎÄ¼ş¿í¶È(¿í¶È(ÏñËØ)/x-·Ö±æÂÊ)
+doch=ÎÄ¼ş¸ß¶È(¸ß¶È(ÏñËØ)/x-·Ö±æÂÊ)
+docasp=ÎÄ¼ş×İºá±È
+docd=ÎÄ¼ş¶Ô½ÇÏß
+square=Æ½·½(ÎÄ¼ş¿í¶ÈxÎÄ¼ş¸ß¶È)
+fres=·Ö±æÂÊ(Ç¿ÖÆ)
+fdocw=ÎÄ¼ş¿í¶È(Ç¿ÖÆ)
+fdoch=ÎÄ¼ş¸ß¶È(Ç¿ÖÆ)
+fdocasp=ÎÄ¼ş×İºá±È(Ç¿ÖÆ)
+fdocd=ÎÄ¼ş¶Ô½ÇÏß
+fsquare=ÎÄ¼şÆ½·½
+ininame=ini-ÎÄ¼şÃû
+
+Quadrate=Õı·½ĞÎ
+Landscape=¡úºáÏò
+Portrait=¡ı×İÏò
+
+; image file format name -- Í¼ÏñÎÄ¼şÃû³Æ
+BMP=BMP
+GIF87a=GIF87a
+GIF89a=GIF89a
+JPEG=JPEG
+PCX=PCX
+PNG=PNG
+PSD=PSD
+TIFF=TIFF
+
+; byte order names -- ×Ö½ÚË³ĞòÃû
+any=ÈÎÒâ
+PC=PC
+Mac=Mac
+
+; mode names -- Ä£Ê½Ãû³Æ
+Mono=µ¥É«
+Gray=»Ò¶È
+Gray-a=»Ò¶È-a
+Doutone=Ë«É«µ÷
+Indexed=Î±²Ê
+;RGB=RGB
+;RGB=RGB
+;CMYK=CMYK
+Multi=¶àÍ¨µÀ
+;YCbCr=YCbCr
+;YIQ=YIQ
+;CIELab=CIELab
+
+; compression method names -- Ñ¹Ëõ·½Ê½Ãû³Æ
+None=ÎŞ
+;CCITT 1D=CCITT 1D
+;G3 Fax=G3 Fax
+;G4 Fax=G4 Fax
+;LZW=LZW
+;JPEG=JPEG
+;ZIP=ZIP
+;Deflate=Deflate
+;PackBits=PackBits
+;RLE=RLE
+bDCT-H=bDCT-H
+xsDCT-H=xsDCT-H
+pDCT-H=pDCT
+sl-H=sl-H
+xsDCT-A=xsDCT-A
+pDCT-A=pDCT-A
+sl-A=sl-A
+
+; units of measurement -- ¼ÆÁ¿µ¥Î»ÿ
+;dpi=dpi
+dpcm=dpcm
+mm=ºÁÃ×
+cm=ÀåÃ×
+m=Ã×
+quadrat=¿ÕÇ¦
+inch=Ó¢´ç
+pica=12µã»î×Ö
+point=µã
+ps-point=ps-µã
+twip=ç¾
+
+; mics -- ÔÓÏî
+Unknown=Î´Öª

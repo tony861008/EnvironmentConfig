@@ -1,0 +1,26 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for InstallShield 6+ CAB archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your i6comp.exe.
+; -----------------------------------------------------------------------
+; Version: i6comp v1.03beta
+; Available at: ftp://ftp.elf.stuba.sk/pub/pc/pack/i6comp13b.zip
+; Comments: 
+; Authors: Guntz Philippe
+;          Andrew Bondar
+; -----------------------------------------------------------------------
+;
+[InstallShield6]
+Description="InstallShield 6.0"
+ID=49 53 63 28 0C
+Extension=HDR,CAB
+BatchUnpack=0
+Archiver=%COMMANDER_PATH%\Plugins\Archiver\i6comp\i6comp.exe
+List=%P l -o -f %AQ
+Debug=0
+Format0="tt-dd-yyyy hh:mm zzzzzzzzzz aaaa pppppppppp      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Extract=%P e -o -d -f %AQ %FQ %FWQ
+Delete=%P d -o -d -f %AQ %FQ
+Add=%P a -o -f %AQ %RQ %fQ
+End="^Version 0.2 -] fOSSiL & Morlac - 2000 [-"
+;

@@ -1,0 +1,16 @@
+; -----------------------------------------------------------------------
+; TC MultiArc config addon for ISO, BIN, VCD images
+; URL: http://plugring.farmanager.com/downld/files/arc/isox_01.zip
+; Author: adaptation from FAR by someone (?)
+; -----------------------------------------------------------------------
+
+[ISO]
+Description=ISO, BIN, VCD images
+Archiver=%COMMANDER_PATH%\Arc\iso.exe
+Extension=iso,bin,vcd
+Start="^-------"
+End="^-------- "
+Format0="zzzzzzzzzz aaaaa dd tt yy hh mm ss nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+List=%P l %A
+ExtractWithPath=%P x %A @%LQ
+Extract=%P e %A @%LQ

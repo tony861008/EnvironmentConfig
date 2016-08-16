@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 3 from Scooter Software -->
+<BCFileFormats>
+	<TTextFormat Value="%02CPP">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02COBOL">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TDataFormat Value="%02CSV">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TDataFormat>
+	<TTextFormat Value="%02DFM">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02PAS">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TVerFormat Value="%02EXE">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TVerFormat>
+	<TTextFormat Value="%02HTML">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02JAVA">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TMP3Format Value="%02MP3">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TMP3Format>
+	<TDataFormat Value="%02MSEXCEL">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TDataFormat>
+	<TTextFormat Value="%02PERL">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02PDF">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02MSWORD">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TPixFormat Value="%02PIX">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TPixFormat>
+	<TTextFormat Value="%02PYTHON">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02REG">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02RTF">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02SORT">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02SQL">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02VB">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TTextFormat Value="%02XML">
+		<CodePageDetect Value="False"/>
+		<UseRes Value="True"/>
+	</TTextFormat>
+	<TDataFormat>
+		<CodePageDetect Value="False"/>
+	</TDataFormat>
+	<TTextFormat>
+		<CodePageDetect Value="False"/>
+	</TTextFormat>
+</BCFileFormats>

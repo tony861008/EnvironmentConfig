@@ -1,0 +1,38 @@
+; -----------------------------------------------------------------------
+; WC MultiArc config addon for 777 archives
+; To install it, copy contents of this file to multiarc.ini and edit
+; "Archiver" key to adjust it to real placement of your 777.exe.
+; -----------------------------------------------------------------------
+; Version: 777 Archiver 0.04 Beta 1 
+; Available at: http://compress.da.ru
+;               http://compression.hypermart.net
+;               ftp://ftp.elf.stuba.sk/pub/pc/pack/777*.zip
+;               ftp://ftp.simtel.net/pub/simtelnet/win95/compress/777*.zip
+; Comments: none
+; WARNING!: 1) If files with same names will occure in different 
+;           directories of 777 archive, only first from it will be extracted by 
+;           multiarc. The cause - impossibility use relative pathes in UFA.EXE
+;           command line. Be careful,please ...
+;           2) Adding is not supported - because 777.exe have original
+;           command-line syntax
+; -----------------------------------------------------------------------
+; 
+[777]
+ID=37 37 37
+IDPos=0
+Debug=0
+BatchUnpack=0
+Extension=777
+Description="777 Archiver 0.04 Beta 1"
+Start="^------------ ---------- ---------- ----- ---------------- "
+End="^------------ ---------- ---------- -----"
+Format0="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+Format1="            zzzzzzzzzzz pppppppppp       yyyy-tt-dd hh:mm aaaaa"
+Format2=" "
+Archiver=c:\program files\wincmd\plugins\777\777.exe
+List=%P v %AAQ 
+Extract=%P e -y %AQA %FAWQ
+Test=%P t -y %AQA
+Delete=%P d -y %AQA %FAWQ
+Add=%P a -y -m9 %AQA %FAQ
+Move=

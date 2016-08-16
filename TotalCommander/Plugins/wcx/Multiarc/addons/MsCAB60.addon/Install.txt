@@ -1,0 +1,56 @@
+   *** Installation for Windows Commander + MultiArc ***
+
+IMPORTANT: Use MultiArc 1.0.0.9 -- MsCab 0.60 doesn't work
+                                   with MultiArc 1.0.0.8!
+
+First of all you should decide, if your primary use of MsCab is to
+make standard CAB archives or backup your private data. If you want
+to make standard CAB archives, please use NoDirs\MsCab060.addon
+(you can enter '-dirs' option for packing empty dirs).
+If you want to use MsCab for backup private data, please use MsCab060.addon
+(you can enter '-dirs-' option for creating standard CAB archives).
+
+To install MsCab - copy MsCab.exe to hard drive, copy contents
+of MsCab060.addon to your MultiArc.ini file, edit "Archiver" key to adjust
+it to real placement of your MsCab.exe (default 'c:\Utils\MsCab.exe')
+and associate CAB extension with MultiArc.wcx (in Windows Commander:
+Configuration/Options/Packer/Configure packer extension DLLs
+type cab in 'All files with extension (ending with)', press 'New type...'
+button and choose MultiArc.wcx).
+
+If you have external SFX modules for MsCab, put them in the same directory
+as the MsCab.exe. If you want to replace default (included in MsCab.exe)
+en_i.MsCabSFX module with another, simply copy that module
+to Default.MsCabSFX file (in the same directory as the MsCab.exe).
+
+If you don't have external SFX modules, you can visit http://www.mscab.prv.pl
+and download them.
+
+WARNING: You must use MultiArc 1.0.0.9 or above.
+
+
+   *** Installation for FAR File and Archive Manager ***
+
+If you want to use 'Cab.fmt' from MsCab package, you can delete
+HKEY_LOCAL_MACHINE\Software\Far\Plugins\MultiArc\CAB
+key from registry (or double-click 'FAR - CAB-.reg'). If you
+prefer original 'Cab.fmt', you should use 'FAR - MsCab060.reg'.
+
+You should decide, if your primary use of MsCab is to make standard
+CAB archives or backup your private data. If you want to make standard
+CAB archives, please use files ('Cab.fmt' or 'FAR - MsCab060.reg')
+from NoDirs subdirectory. Otherwise you should use files from base dir
+of MsCab package. You can enter '-dirs' or '-dirs-' option for storing or
+not storing dirs’ names.
+
+To install MsCab - copy MsCab.exe to directory pointed by PATH
+(i.e. '\WINDOWS\COMMAND') and double-click 'FAR - MsCab060.reg' or
+copy 'Cab.fmt' to "\Program Files\Far\Plugins\MultiArc\Formats\Cab.fmt".
+
+If you have external SFX modules for MsCab, put them in the same directory
+as the MsCab.exe. If you want to replace default (included in MsCab.exe)
+en_i.MsCabSFX module with another, simply copy that module
+to Default.MsCabSFX file (in the same directory as the MsCab.exe).
+
+If you don't have external SFX modules, you can visit http://www.mscab.prv.pl
+and download them.

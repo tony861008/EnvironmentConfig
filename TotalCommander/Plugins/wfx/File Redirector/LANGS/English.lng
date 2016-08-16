@@ -1,0 +1,69 @@
+[Messages]
+0="Unknown command.Use 'n<Name>' command."
+1="Insert disk"
+2="Unable to save base"
+3="Unable to load base"
+4="Already checking someting"
+
+[Common]
+0="Open"
+1="Load"
+2="Save"
+3="Save as..."
+4="All files (*.*)"
+5="New"
+6="Apply"
+7="Delete"
+8="OK"
+9="Cancel"
+10="Default"
+11="Add"
+
+
+[Main]
+0="Plugin configuration"
+1="General"
+2="Types"
+3="Language"
+
+[Main_General]
+0="General confuguration"
+1="Path to base"
+2="Files"
+3="Don't save"
+4="Save first bytes"
+5="Full save"
+6="only for"
+7="Compression"
+8="None"
+9="Medium"
+10="Best"
+11="Read only"
+12="Extract from base only if can't read original"
+
+[Main_Type]
+0="File type to display"
+1="File type for new files"
+2="File types configuration"
+3="Select file type to edit"
+4="New file type"
+5="Type"
+
+
+[Directory]
+0="Directory configuration"
+1="Path to directory"
+2="Check base"
+3="Check directory after loading base"
+4="Check each H:M"
+
+
+[File]
+0="File configuration"
+1="Descriptor of disk where file is located"
+2="Path to file"
+3="Files in base"
+4="File Type"
+
+[Language]
+0="Path to language file"

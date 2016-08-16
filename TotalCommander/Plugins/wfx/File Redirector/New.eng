@@ -1,0 +1,89 @@
+File Redirector 5.4 (25.09.2004)
+- Correct export to M3U. Mask - "MP3|WMA|MID|VQF|MOD|S3M|IT|WAV".
+  (to make export - see directory configuration/Save As)
+- Make correct unload of base.
+- Fix bug with synchronize directorys
+
+File Redirector 5.3 (11.09.2004)
+- Now you can assign several paths to file.
+  When file is overwriting - adding new path.
+- Export to M3U. By mask "MP3|WMA|MID|VQF|MOD|S3M|IT"
+
+File Redirector 5.2 (04.09.2004)
+- New langages:
+ Spanish (Jose Mejia)
+ Polski (Daniel Magalski)
+ German (Hoppfrosch)
+- Icons now is working.
+- Correct dialogs for some languages.
+
+File Redirector 5.1 (25.08.2004)
+- French langage aviable now (some one send it to my mail).
+- Find out some situdations when base begin save, but there
+  is no need to do it.
+- Fixed some errors in dialogs.
+
+
+File Redirector 5.0 (22.08.2004)
+- Logosman connected to the project.
+- Multilingual version: Belarussia, Russian, English.
+- To change base file flag 'read only' use general configuration.
+- Help file.
+- Improved compression of base.
+- Plugin use less memory (~4Mb on 10000 files).
+- Fixed many small bugs.
+
+File Redirector 4.6
+ - Now configuration of base saved in base. Thats why:
+   - Removed cN command
+   - To make base ReadOnly - make base file ReadOnly.
+ - Now you can assign types for file
+
+File Redirector 4.5
+ - Now you can change attributes of files.
+ - Add command "n<ConfigName>".
+
+File Redirector 4.4
+ - Reduse size of saving base (about 10-25%)
+
+File Redirector 4.3
+ - If "ReadOnly" flag is set the base unload from
+   the memory (work more slow, but use less memory :)
+ - Add button "SaveAs" in directory configuration.
+
+File Redirector 4.2
+ - Now you can record all file in base.
+ - Recording files whith definded extanations.
+
+File Redirector 4.1
+ -Now status of checking showed by incons (thanks to Spiny)
+ -While loading base - counting size of directory.
+ -Fix some bugs (thanks to Icfy).
+
+File Redirector 4.0
+ Base is smaller:
+  Whithout compression: on 1000 files - 100kb.
+  Middle complession: on 1000 files - 40 kb.
+  Maximum compression:on 1000 files -20 kb.
+ Add checking of new files.
+
+File Redirector 3.2
+ Now you can pack base (on 1000 files - 50-100kb of base);
+ Now you can copy/rename files in plugin.
+ This is english version :).
+
+File Redirector 3.0
+ Fix bugs.
+ Icons chaneged.
+
+File Redirector 2.0a
+ Now you can copy files in root.
+
+File Redirector 1.1a
+ Add some error message (i.e. cun't open file).
+ If ENTER is pressed on the file - it launced.
+ Add configurarion (saved to a pugin directory)
+ Now you can save first x-bytes of file.
+
+File Redirector 1.0a
+ Start
