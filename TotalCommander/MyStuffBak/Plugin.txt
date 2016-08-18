@@ -1,4 +1,0 @@
-Plugins\Archiver
-Plugins\wlx\Office
-Plugins\wcx\Multiarc
-Plugins\wcx\rpm

@@ -1,4 +1,0 @@
-2002-12-02  Release version 1.5
-2002-12-02  [C.Ghisler] Added support for RPM packed with bz2 (requires separate bz2 plugin)
-2002-09-24  Release version 1.4
-2002-09-24  [C.Ghisler] Added support for old style .cpio files (old binary header)

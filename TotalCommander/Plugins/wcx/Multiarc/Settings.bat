@@ -1,1 +1,0 @@
-@rundll32 multiarc.wcx, Settings

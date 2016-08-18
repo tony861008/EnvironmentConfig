@@ -1,5 +1,0 @@
-[chn]
-Unicode test=Unicode 测试
-Locked test=锁定测试
-ANSI|Partial Unicode|Pure Unicode|Invalid=ANSI|部分Unicode|纯Unicode|无效
-Access|Locked|Not found=可访问|已锁定|未找到
